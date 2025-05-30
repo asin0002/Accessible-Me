@@ -27,6 +27,19 @@ h6 {
 img {
   width: 100%;
 }
+/* Hides the skip link until it's focused, helps with keyboard navigation */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+}
+.skip-link:focus {
+  left: 0;
+  top: 0;
+  background: #000;
+  color: #fff;
+  padding: 1rem;
+  z-index: 1000;
+}
 
 /* Styling for nav bar list (removes bullets and aligns links in a row) */
 .main-nav ul {
