@@ -1,0 +1,82 @@
+/* Sets the font for the whole page and removes default margins/padding */
+body {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  background-color: grey;
+  margin: 0;
+  padding: 0;
+}
+
+/* This is for all heading tags (h1 to h6) so they use a cooler font */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
+}
+
+/* Centers the whole site and gives it side padding */
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Makes images take full width of their container */
+img {
+  width: 100%;
+}
+
+/* Styling for nav bar list (removes bullets and aligns links in a row) */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+/* Each nav item takes equal space and centers the text */
+.main-nav ul li {
+  flex: 1;
+  text-align: center;
+}
+
+/* Styles the actual nav links so they look clean */
+.main-nav ul li a {
+  display: block;
+  color: inherit; /* makes link same color as parent */
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+/* Styles inputs and textarea fields inside forms */
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: .5rem 1rem;
+}
+
+/* Locks textarea height so it doesn’t stretch */
+form textarea {
+  min-height: 150px;
+  max-height: 150px;
+  height: 150px;
+  resize: none;
+}
+
+/* Styles the submit button in forms */
+form button {
+  background: none;
+  border: 2px solid black;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+/* Adds padding to footer */
+.site-footer {
+  padding: 2rem 0;
+}
